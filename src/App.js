@@ -13,7 +13,7 @@ function App() {
   if (loading){
     return <Loader/>
   }
-  document.title = 'My project'
+  document.title = 'My project';
   return (
     <div className="App">
       <Header/>
