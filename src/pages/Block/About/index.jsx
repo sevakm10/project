@@ -31,7 +31,7 @@ function About() {
       useEffect(() => {
         function handleScroll() {
           const { top } = myRef.current.getBoundingClientRect();
-          if( top < 500){
+          if( top < 700){
             setClas1('about-h2')
             
           }

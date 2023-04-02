@@ -16,10 +16,10 @@ function Contact() {
             // if (top < 100) {
             //     setAnim('clip-path-anim')
             // }
-            if (top < 522) {
+            if (top < 700) {
                 setAnim2('contact-h2')
             }
-            if (top < 100) {
+            if (top < 200) {
                 setAnim3('block')
             }
            

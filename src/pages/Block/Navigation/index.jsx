@@ -13,6 +13,7 @@ function Navigation() {
 
 
     return (
+        
         <div ref={myRef} className='sticky-nav' >
             <div className={menuAnim}>
                 <ul className='menu' >

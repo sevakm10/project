@@ -25,7 +25,7 @@ function Project() {
   useEffect(() => {
     function handleScroll() {
       const { top } = myRef.current.getBoundingClientRect();
-      if( top < 500){
+      if( top < 700){
         setStp('project-h2')
       }
     //   else{
@@ -44,7 +44,7 @@ function Project() {
     function handleScroll() {
       const { top } = myRef1.current.getBoundingClientRect();
       
-      if( top < 500){
+      if( top < 700){
         setSt1('anim');
         setSt11('anim-p')
       }
@@ -65,7 +65,7 @@ function Project() {
     function handleScroll() {
       const { top } = myRef2.current.getBoundingClientRect();
       
-      if( top < 500){
+      if( top < 700){
         setSt2('anim')
         setSt22('anim-p')
       }
@@ -86,7 +86,7 @@ function Project() {
     function handleScroll() {
       const { top } = myRef3.current.getBoundingClientRect();
       
-      if( top < 500){
+      if( top < 700){
         setSt3('anim')
         setSt33('anim-p')
       }

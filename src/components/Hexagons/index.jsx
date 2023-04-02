@@ -13,7 +13,7 @@ function Hexagons(props){
     useEffect(() => {
         function handleScroll() {
           const { top } = myRef.current.getBoundingClientRect();
-          if( top < 500){
+          if( top < 800){
             setClas1('')
             setClas2('')
           }

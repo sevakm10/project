@@ -14,7 +14,7 @@ function Interests() {
         function handleScroll() {
             
             const { top } = myRef1.current.getBoundingClientRect();
-            if (top < 500) {
+            if (top < 700) {
                 setClas1('interests-h2')
 
             }
@@ -30,13 +30,11 @@ function Interests() {
     useEffect(() => {
         function handleScroll() {
             const { top } = myRef2.current.getBoundingClientRect();
-            if (top < 500) {
+            if (top < 600) {
                 setClas2('pictures')
 
             } 
-            // else {
-            //     setClas2('')
-            // }
+            
 
 
         }
