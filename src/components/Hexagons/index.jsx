@@ -17,11 +17,7 @@ function Hexagons(props){
             setClas1('')
             setClas2('')
           }
-        //   else{
-        //     setClas1('none')
-        //     setClas2('none')
-        //   }
-          
+       
         }
     
         window.addEventListener('scroll', handleScroll);

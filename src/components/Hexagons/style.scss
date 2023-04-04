@@ -3,7 +3,6 @@
 }
 .hexagons-div{
 	width: 280px;
-	// background-color: #18123f;
 	animation-name: load ;
 	
 	@keyframes load {
@@ -17,62 +16,46 @@
 	
 	.hexagon {
 		position: relative;
-		width: 130px; 
-		height: 75.06px;
-		background-color: #64C7CC;
-		margin: 37.53px auto;
-		rotate: (30deg);
+		background-color: #04c2c9;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		height: 140px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 		padding-top: 8px;
-		-webkit-animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+		-webkit-animation: flip-diagonal-1-tr 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+	        animation: flip-diagonal-1-tr 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+		
 	  }
-	  @-webkit-keyframes rotate-vert-center {
+	  @-webkit-keyframes flip-diagonal-1-tr {
 		0% {
-		  -webkit-transform: rotateY(0);
-				  transform: rotateY(0);
-		}
-		100% {
-		  -webkit-transform: rotateY(360deg);
-				  transform: rotateY(360deg);
-		}
-	  }
-	  @keyframes rotate-vert-center {
-		0% {
-		  -webkit-transform: rotateY(0);
-				  transform: rotateY(0);
-				  opacity: 0;
-		}
-		100% {
-		  -webkit-transform: rotateY(360deg);
-				  transform: rotateY(360deg);
+		  -webkit-transform: rotate3d(1, 1, 0, 0deg);
+				  transform: rotate3d(1, 1, 0, 0deg);
 				  opacity: 1;
 		}
+		100% {
+		  -webkit-transform: rotate3d(1, 1, 0, 180deg);
+				  transform: rotate3d(1, 1, 0, 180deg);
+				  opacity: 0;
+		}
 	  }
-	  
-	  .hexagon:before,
-	  .hexagon:after {
-		content: "";
-		position: absolute;
-		width: 0;
-		border-left: 65px solid transparent;
-		border-right: 65px solid transparent;
-	  }
-	  
-	  .hexagon:before {
-		bottom: 100%;
-		border-bottom: 37.53px solid #64C7CC;
-	  }
-	  
-	  .hexagon:after {
-		top: 100%;
-		width: 0;
-		border-top: 37.53px solid #64C7CC;
+	  @keyframes flip-diagonal-1-tr {
+		0% {
+		  -webkit-transform: rotate3d(1, 1, 0, 0deg);
+				  transform: rotate3d(1, 1, 0, 0deg);
+				  opacity: 1;
+		}
+		100% {
+		  -webkit-transform: rotate3d(1, 1, 0, 180deg);
+				  transform: rotate3d(1, 1, 0, 180deg);
+				  opacity: 0;
+		}
 	  }
 	.hexagon-picture{
 		color: snow;
-		font-size: 50px;
-		text-align: center;
-		rotate: (-30deg);
+		font-size: 60px;
 	}
 	.hexagon-h2{
 		text-align: center;
