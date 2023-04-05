@@ -1,0 +1,149 @@
+
+
+.interests {
+    max-width: 1600px;
+    min-height: 100vh;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: block;
+    background-color: snow;
+    
+
+    .interests-h2 {
+        width: 250px;
+        padding: 16px;
+        font-size: 40px;
+        color: rgb(64, 61, 61);
+        // animation-name: interests-h2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        position: relative;
+        opacity: 0;
+        border-bottom: 1px solid gray;
+        margin: 20px 0;
+    }
+
+    @keyframes interests-h2 {
+        0% {
+            opacity: 0;
+            left: 20%;
+
+        }
+
+        100% {
+            opacity: 1;
+            left: calc(50% - 130px);
+        }
+    }
+
+    }
+
+    .interests-part2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        padding: 50px;
+
+        .pictures {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            margin: 20px;
+            // border-radius : 0px 111px 0px 111px;
+            animation-duration: 1s;
+            animation-delay: 0.3s;
+            animation-fill-mode: forwards;
+            transition: 1s;
+            cursor: help;
+            -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+            .style-black {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: 1s;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .pictures-h3 {
+                position: relative;
+                color: rgb(250, 250, 255);
+                text-align: center;
+                font-size: 30px;
+                top: 50%;
+                transition: 1s;
+                z-index: 1;
+            }
+
+            .pictures-p {
+                display: none;
+                position: relative;
+                color: snow;
+                text-align: center;
+                padding: 10%;
+                top: 10%;
+                font-size: 24px;
+                animation-name: p;
+                animation-duration: 3s;
+            }
+
+            @keyframes p {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+
+        }
+        .pictures:hover{
+            transition: 1s;
+            border-radius : 0px 111px 0px 111px
+            
+        }
+        .pictures::before{
+            transition: 1s;
+        }
+        
+
+        // @keyframes pictures {
+        //     from {
+        //         opacity: 0;
+        //     }
+
+        //     to {
+        //         opacity: 1;
+        //     }
+        // }
+
+        .pictures:hover .pictures-h3 {
+            border-radius : 0px 111px 0px 111px;
+            transition: 1s;
+            top: 10%;
+        }
+
+        .pictures:hover .style-black {
+            border-radius : 0px 111px 0px 111px;
+            // background-color: rgba(0, 0, 0, 0.9);
+            filter: brightness(10%);
+            transition: 1s ease;
+        }
+
+        .pictures:hover .pictures-p {
+            border-radius : 0px 111px 0px 111px;
+            display: block;
+        }
+
+
+
+    }
