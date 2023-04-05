@@ -53,19 +53,19 @@ function Interests() {
                 INTERESTS
             </h2>
             <div className='interests-part2' ref={myRef2}>
-                <div className='pictures' style={{ backgroundImage: `url(${messi})`,animationName: clas2  }}>
-                    <div className="style-black"></div>
+                <div className='pictures' style={{animationName: clas2  }}>
+                    <div className="style-black" style={{ backgroundImage: `url(${messi})`}}></div>
                     <h3 className="pictures-h3">Football</h3>
                     <p className="pictures-p">I have been a passionate football fan since childhood. My favorite team is Barcelona, ​​my favorite player is Ronaldinho.</p>
                 </div>
-                <div className='pictures' style={{ backgroundImage: `url(${travel})`,animationName: clas2  }}>
-                    <div className="style-black"></div>
+                <div className='pictures' style={{animationName: clas2  }}>
+                    <div className="style-black" style={{ backgroundImage: `url(${travel})`}}></div>
                     <h3 className="pictures-h3">Travel</h3>
                     <p className="pictures-p">This is a new hobby that I discovered in recent years. I prefer both domestic and international tourism.
                     </p>
                 </div>
-                <div className='pictures' style={{ backgroundImage: `url(${music})`,animationName: clas2  }}>
-                    <div className="style-black"></div>
+                <div className='pictures' style={{animationName: clas2  }}>
+                    <div className="style-black" style={{ backgroundImage: `url(${music})`}}></div>
                     <h3 className="pictures-h3">Music</h3>
                     <p className="pictures-p">Probably there is not a single person in the world who does not like to listen to music. Therefore, I am no exception. And I listen to everything, the genre depends on the mood.
                     </p>
