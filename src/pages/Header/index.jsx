@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header" id='header'>
             <div className="header-h2-all">
-                <h2 className='header-h2'>Hello, I'am <span className="header-p"> Sevak Manverlyan.</span></h2>
+                <h2 className='header-h2'>Hello, I'am <span className="header-p"> Sevak Manvelyan.</span></h2>
                 <h2 className='header-h2'>I'm a web-developer.</h2>
                 {/* <Link
                     activeClass="active"
